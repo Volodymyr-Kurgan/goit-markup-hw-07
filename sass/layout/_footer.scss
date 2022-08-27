@@ -1,0 +1,39 @@
+.page-footer {
+  background-color: var(--secondary-bc-color);
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.adress-list__link {
+  color: var(--main-light-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color var(--timing-duration) var(--timing-function);
+}
+
+.adress-list__link--colored {
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.page-footer__social-network-link {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--main-light-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
